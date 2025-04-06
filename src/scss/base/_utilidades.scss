@@ -1,0 +1,9 @@
+@use 'variables' as v;
+
+.text-cemter{
+    text-align: center;
+}
+
+.bg-primario{
+    background-color: v.$primario;
+}
