@@ -1,13 +1,13 @@
 @use 'variables' as v;
 
-@mixin tekefono{
+@mixin telefono{
     @media(max-width: v.$telefono){
       @content;  
     }
 }
 
-@mixin tabler{
-    @media(max-width: v.$tablet){
+@mixin tablet{
+    @media(min-width: v.$tablet){
       @content;  
     }
 }
