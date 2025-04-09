@@ -1,0 +1,19 @@
+@use 'variables' as v;
+
+@mixin tekefono{
+    @media(max-width: v.$telefono){
+      @content;  
+    }
+}
+
+@mixin tabler{
+    @media(max-width: v.$tablet){
+      @content;  
+    }
+}
+
+@mixin desktop{
+    @media(max-width: v.$desktop){
+      @content;  
+    }
+}
