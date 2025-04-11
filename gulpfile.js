@@ -24,7 +24,7 @@ function versionWebp() {
 
 function dev() {
   watch("src/scss/**/*.scss", css);
-  watch("src/img/**/*", versionWebp);
+  // watch("src/img/**/*", versionWebp);
 }
 
 exports.css = css;
