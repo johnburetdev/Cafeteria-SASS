@@ -358,7 +358,7 @@ ul {
   background-color: #5E311E;
 }
 
-h1, h2, h3 {
+h1, h2, .heading-blanco, h3 {
   font-family: "Releway", sans-serif;
   margin: 0 0 5rem 0;
   text-transform: uppercase;
@@ -370,16 +370,16 @@ h1 {
   font-size: 4rem;
 }
 
-h2 {
+h2, .heading-blanco {
   font-size: 3.6rem;
   color: #5E311E;
 }
-h2 span {
+h2 span, .heading-blanco span {
   color: #C39C63;
   font-size: 1.8rem;
   display: block;
 }
-h2::after {
+h2::after, .heading-blanco::after {
   content: "";
   display: block;
   margin: 0 auto;
@@ -387,6 +387,16 @@ h2::after {
   height: 10rem;
   background-image: url(../img/cafe.svg);
   background-size: 10rem;
+}
+
+.heading-blanco {
+  color: #FFF;
+}
+.heading-blanco span {
+  color: #FFF;
+}
+.heading-blanco::after {
+  display: none;
 }
 
 h3 {
@@ -497,26 +507,6 @@ h3 {
   }
 }
 
-.iconos {
-  margin-top: 5rem;
-}
-@media (min-width: 768px) {
-  .iconos .listado-iconos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
-  }
-}
-.iconos .listado-iconos li img {
-  margin: 0 auto;
-  width: 12rem;
-}
-.iconos .listado-iconos li p {
-  font-size: 3.2rem;
-  font-family: "Bona Nova", sans-serif;
-  color: #5E311E;
-}
-
 .galeria {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -590,4 +580,74 @@ h3 {
   .galeria .imagen:nth-child(10) img {
     width: 62rem;
   }
+}
+
+.iconos {
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .iconos .listado-iconos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+  }
+}
+.iconos .listado-iconos li img {
+  margin: 0 auto;
+  width: 12rem;
+}
+.iconos .listado-iconos li p {
+  font-size: 3.2rem;
+  font-family: "Bona Nova", sans-serif;
+  color: #5E311E;
+}
+
+.nuestro-menu {
+  background-image: url(../img/menu_arriba.svg), url(../img/menu_abajo.svg), linear-gradient(to top, #5E311E, #5E311E);
+  background-repeat: no-repeat;
+  background-position: center 5rem, center 92%, 100%;
+  background-size: 200%;
+  padding: 15rem 5rem 20rem 5rem;
+}
+@media (min-width: 768px) {
+  .nuestro-menu {
+    padding: 15rem 0 20re 0;
+    background-size: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .nuestro-menu {
+    background-size: 50%, 50%, 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+.menu h3 {
+  color: #FFF;
+}
+.menu li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li p {
+  color: #FFF;
+  font-size: 2.2rem;
+  line-height: 1.5;
+  margin: 0 0 2rem 0;
+}
+.menu li p span {
+  display: block;
+  color: #C39C63;
+}
+.menu li .precio {
+  font-size: 4rem;
+  font-weight: 700;
 }
