@@ -358,6 +358,14 @@ ul {
   background-color: #5E311E;
 }
 
+.margin-negativo-10 {
+  margin-top: -10rem;
+}
+
+.bg-white {
+  background-color: #FFF;
+}
+
 h1, h2, .heading-blanco, h3 {
   font-family: "Releway", sans-serif;
   margin: 0 0 5rem 0;
@@ -650,4 +658,30 @@ h3 {
 .menu li .precio {
   font-size: 4rem;
   font-weight: 700;
+}
+
+.nuestros-testimoniales {
+  padding: 10rem 2rem;
+}
+@media (min-width: 768px) {
+  .nuestros-testimoniales {
+    padding: 10rem;
+  }
+}
+.nuestros-testimoniales .testimonial {
+  background-color: #ebe7de;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+}
+@media (min-width: 1024px) {
+  .nuestros-testimoniales .testimonial {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+.nuestros-testimoniales .testimonial .autor {
+  font-family: "Bona Nova", sans-serif;
+  font-size: 2.4rem;
+  text-align: right;
+  color: #5E311E;
 }
