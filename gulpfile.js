@@ -23,8 +23,7 @@ function versionWebp() {
 }
 
 function dev() {
-  watch("src/scss/**/*.scss", css);
-  // watch("src/img/**/*", versionWebp);
+  return watch("src/scss/**/*.scss", css);
 }
 
 exports.css = css;
