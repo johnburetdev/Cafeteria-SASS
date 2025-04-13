@@ -1,4 +1,4 @@
-@use 'variables' as v;
+@use 'base/variables' as v;
 
 .text-cemter{
     text-align: center;
@@ -14,4 +14,8 @@
 
 .bg-white{
     background-color: v.$blanco;
+}
+
+.padding-botton-0{
+    padding-bottom: 0;
 }
